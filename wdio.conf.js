@@ -23,6 +23,7 @@ export const config = {
     // will be called from there.
     //
     specs: [
+       'test/specs/*'
         // ToDo: define location for spec files here
     ],
     // Patterns to exclude.
@@ -144,7 +145,8 @@ export const config = {
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000
-    },
+    }
+    
     //
     // =====
     // Hooks
