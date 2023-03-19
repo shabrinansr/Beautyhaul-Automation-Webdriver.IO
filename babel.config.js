@@ -1,6 +1,6 @@
-mondule.exports ={
+module.exports ={
     presets: [
-        ['@babel/preset-dev', {
+        ['@babel/preset-env', {
             targets: {
                 node: '14'
             }
