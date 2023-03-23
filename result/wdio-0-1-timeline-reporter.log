@@ -1,0 +1,66 @@
+{
+  "start": "2023-03-23T04:31:35.247Z",
+  "end": "2023-03-23T04:31:47.892Z",
+  "capabilities": {
+    "acceptInsecureCerts": true,
+    "browserName": "chrome",
+    "browserVersion": "111.0.5563.110",
+    "chrome": {
+      "chromedriverVersion": "110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839})",
+      "userDataDir": "/var/folders/cc/5yx7pb2x3hd7_3gdjhv0w8c00000gp/T/.com.google.Chrome.QDSfJp"
+    },
+    "goog:chromeOptions": {
+      "debuggerAddress": "localhost:49786"
+    },
+    "networkConnectionEnabled": false,
+    "pageLoadStrategy": "normal",
+    "platformName": "mac os x",
+    "proxy": {},
+    "setWindowRect": true,
+    "strictFileInteractability": false,
+    "timeouts": {
+      "implicit": 0,
+      "pageLoad": 300000,
+      "script": 30000
+    },
+    "unhandledPromptBehavior": "dismiss and notify",
+    "webauthn:extension:credBlob": true,
+    "webauthn:extension:largeBlob": true,
+    "webauthn:virtualAuthenticators": true,
+    "sessionId": "f5ae6e9500c99cf32bab8c1b21b4f910"
+  },
+  "host": "localhost",
+  "port": 9515,
+  "baseUrl": "http://localhost",
+  "framework": "mocha",
+  "duration": 12645,
+  "suites": [
+    {
+      "title": "Beautyhaul Indonesia",
+      "duration": 11734,
+      "start": "2023-03-23T04:31:35.255Z",
+      "end": "2023-03-23T04:31:46.989Z",
+      "tests": [
+        {
+          "title": "Sign In",
+          "start": "2023-03-23T04:31:35.256Z",
+          "end": "2023-03-23T04:31:46.985Z",
+          "duration": 11729,
+          "state": "passed",
+          "screenshots": [
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1679545907826.jpeg"
+          ]
+        }
+      ],
+      "hooks": []
+    }
+  ],
+  "specs": [
+    "file:///Users/beautyhaul/Documents/beautyhaulindo/test/specs/002_logout.js"
+  ],
+  "state": {
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0
+  }
+}

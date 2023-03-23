@@ -17,19 +17,31 @@ class LoginPage extends Page {
     get signInSuccessSelector() {
         return $('/html/body/header/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]')
     }
+    get dontallowSelector() {
+        return $('//*[@id="moe-dontallow_button"]')
+    }
 
     // Action
     async clickSignIn() {
         await this.signInSelector.click()
     }
-    async inputEmail() {
-        await this.inputEmailSelector.setValue()
+    async clickEmail() {
+        await this.inputEmailSelector.click()
     }
-    async inputPass() {
-        await this.inputPassSelector.setValue()
+    async inputEmail(email) {
+        await this.inputEmailSelector.setValue(email)
+    }
+    async clickPass() {
+        await this.inputPassSelector.click()
+    }
+    async inputPass(password) {
+        await this.inputPassSelector.setValue(password)
     }
     async signInButton() {
         await this.signInButtonSelector.click()
+    }
+    async clickDontAllow(){
+        await this.dontallowSelector.click()
     }
 }
 
