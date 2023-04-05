@@ -25,7 +25,7 @@ export const config = {
     // will be called from there.
     //
     specs: [
-       'test/specs/*'
+       'test/specs/003_order.js'
         // ToDo: define location for spec files here
     ],
     // Patterns to exclude.
@@ -55,7 +55,8 @@ export const config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
+    capabilities: [
+        {
     
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
@@ -68,7 +69,12 @@ export const config = {
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
-    }],
+        },
+
+        // { 
+        //     browserName: 'firefox', port: 4445
+        // }
+    ],
     //
     // ===================
     // Test Configurations
@@ -141,7 +147,7 @@ export const config = {
     reporters: ['spec', [
         'timeline', {
             outputDir: './result',
-            screenshotStrategy: 'on:error'
+            screenshotStrategy: 'before:click'
         }
     ]],
     
@@ -153,7 +159,6 @@ export const config = {
         timeout: 60000,
         //require: ['@babel/register'],
     }
-    
     //
     // =====
     // Hooks

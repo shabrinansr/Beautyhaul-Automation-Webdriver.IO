@@ -2,6 +2,7 @@ import LoginPage from "../pageobjects/login.page";
 
 describe('Beautyhaul Indonesia', () => {
     it('Sign In', async () => {
+        //await browser.maximizeWindow()
         await browser.url('https://www.playbybeautyhaul.com/')
         await browser.pause(3000)
         await LoginPage.clickDontAllow()

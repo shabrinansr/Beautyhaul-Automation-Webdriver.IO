@@ -1,16 +1,16 @@
 {
-  "start": "2023-03-23T04:31:19.923Z",
-  "end": "2023-03-23T04:31:31.443Z",
+  "start": "2023-04-05T09:49:50.438Z",
+  "end": "2023-04-05T09:50:15.200Z",
   "capabilities": {
     "acceptInsecureCerts": true,
     "browserName": "chrome",
-    "browserVersion": "111.0.5563.110",
+    "browserVersion": "111.0.5563.146",
     "chrome": {
       "chromedriverVersion": "110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839})",
-      "userDataDir": "/var/folders/cc/5yx7pb2x3hd7_3gdjhv0w8c00000gp/T/.com.google.Chrome.IZLkzV"
+      "userDataDir": "/var/folders/cc/5yx7pb2x3hd7_3gdjhv0w8c00000gp/T/.com.google.Chrome.eZNS9A"
     },
     "goog:chromeOptions": {
-      "debuggerAddress": "localhost:49763"
+      "debuggerAddress": "localhost:58243"
     },
     "networkConnectionEnabled": false,
     "pageLoadStrategy": "normal",
@@ -27,28 +27,50 @@
     "webauthn:extension:credBlob": true,
     "webauthn:extension:largeBlob": true,
     "webauthn:virtualAuthenticators": true,
-    "sessionId": "18614f6317c8fdf334708a6f9c4df86b"
+    "sessionId": "f5d27531b520963b1cc04a68e1fb4881"
   },
   "host": "localhost",
   "port": 9515,
   "baseUrl": "http://localhost",
   "framework": "mocha",
-  "duration": 11520,
+  "duration": 24762,
   "suites": [
     {
       "title": "Beautyhaul Indonesia",
-      "duration": 11107,
-      "start": "2023-03-23T04:31:19.932Z",
-      "end": "2023-03-23T04:31:31.039Z",
+      "duration": 24272,
+      "start": "2023-04-05T09:49:50.443Z",
+      "end": "2023-04-05T09:50:14.715Z",
       "tests": [
         {
-          "title": "Sign In",
-          "start": "2023-03-23T04:31:19.932Z",
-          "end": "2023-03-23T04:31:31.034Z",
-          "duration": 11102,
+          "title": "Order",
+          "start": "2023-04-05T09:49:50.443Z",
+          "end": "2023-04-05T09:50:14.710Z",
+          "duration": 24267,
           "state": "passed",
           "screenshots": [
-            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1679545891430.jpeg"
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688196662.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688197506.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688200033.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688200472.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688201290.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688201541.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688202008.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688202226.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688202584.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688202793.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688205053.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688205311.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688205814.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688206073.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688208151.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688208439.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688210080.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688210370.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688210700.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688210966.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688212205.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688212443.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1680688215176.jpeg"
           ]
         }
       ],
@@ -56,7 +78,7 @@
     }
   ],
   "specs": [
-    "file:///Users/beautyhaul/Documents/beautyhaulindo/test/specs/001_login.js"
+    "file:///Users/beautyhaul/Documents/beautyhaulindo/test/specs/003_order.js"
   ],
   "state": {
     "passed": 1,
