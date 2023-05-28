@@ -16,7 +16,7 @@ class OrderPage extends Page {
         return $('/html/body/div[2]/div/div/div[2]/div[2]/div[4]/a/div[1]/picture/img')
     }
     get addToCartSelector() {
-        return $('/html/body/div[2]/div/div[2]/div[3]/div[2]/form/div[9]/div[2]/button')
+        return $('/html/body/div[2]/div/div[2]/div[3]/div[2]/form/div[8]/div[2]/button')
     }
     get cartIconSelector() {
         return $('/html/body/header/div[2]/div[1]/div[1]/div[3]/div[2]/ul/li[4]/a/span')
@@ -49,13 +49,16 @@ class OrderPage extends Page {
         //Untuk expect
         return $('/html/body/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div[1]/div[1]')
     }
+    get uniqueOrderId() {
+        return $('/html/body/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div[1]/div[2]')
+    }
 
 //action
     async clickShopByCategories() {
         await this.shopByCategoriesSelector.click()
     }
     async clickMakeUp() {
-        await this.makeupSectionSelector.moveTo({x: 20,y: 20})
+        await this.makeupSectionSelector.moveTo()
     }
     async clickFoundation() {
         await this.foundationSectionSelector.click()
@@ -92,6 +95,9 @@ class OrderPage extends Page {
     }
     async clickCompleteOrderButton() {
         await this.completeOrderButtonSelector.click()
+    }
+    async doubleClickOrderId() {
+        await this.uniqueOrderId.doubleClick()
     }
 }
 export default new OrderPage()
