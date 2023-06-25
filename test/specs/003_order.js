@@ -19,7 +19,7 @@ describe('Beautyhaul Indonesia', () => {
         await LoginPage.signInButton()
         await browser.pause(1000)
 
-//Order
+        //Order
         await OrderPage.clickShopByCategories()
         await OrderPage.clickMakeUp()
         await OrderPage.clickFoundation()
@@ -35,10 +35,10 @@ describe('Beautyhaul Indonesia', () => {
         await OrderPage.clickNextButton()
         await OrderPage.clickCompleteOrderButton()
         await expect(OrderPage.orderIdSelector).toHaveTextContaining('ORDER ID')
-        // step 1: copy order id
+        
+        // mark as paid
         await OrderPage.doubleClickOrderId()
         await browser.keys([Key.Command, 'c'])
-        //await browser.keys([Key.Command, 't'])
         await browser.newWindow('https://www.playbybeautyhaul.com/admin')
         await markaspaidPage.clickEmail()
         await markaspaidPage.inputEmail('shabeautyhaul@gmail.com')
@@ -50,6 +50,14 @@ describe('Beautyhaul Indonesia', () => {
         await markaspaidPage.clickSearch()
         await browser.keys([Key.Command, 'v'])
         await markaspaidPage.clickOrderId()
+        await markaspaidPage.markAsPaid()
+        await markaspaidPage.clickPaymentName()
+        await markaspaidPage.inputPaymentName('shabrina')
+        await markaspaidPage.clickPaymentAmount()
+        await markaspaidPage.inputPaymentAmount(200000)
+        await markaspaidPage.clickPaymentDate()
+        await markaspaidPage.chooseCalendar()
+        await markaspaidPage.clickSubmitPayment()
         // step 2: buka tab baru
         // step 3: buka admin panel
         // step 4: isi username
