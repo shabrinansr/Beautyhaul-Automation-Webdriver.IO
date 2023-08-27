@@ -16,7 +16,7 @@ class OrderPage extends Page {
         return $('/html/body/div[2]/div/div/div[2]/div[2]/div[4]/a/div[1]/picture/img')
     }
     get addToCartSelector() {
-        return $('/html/body/div[2]/div/div[2]/div[3]/div[2]/form/div[8]/div[2]/button')
+        return $('/html/body/div[2]/div/div[2]/div[3]/div[2]/form/div[9]/div[2]/button')
     }
     get cartIconSelector() {
         return $('/html/body/header/div[2]/div[1]/div[1]/div[3]/div[2]/ul/li[4]/a/span')

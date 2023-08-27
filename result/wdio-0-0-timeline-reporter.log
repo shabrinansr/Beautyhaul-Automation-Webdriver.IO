@@ -1,26 +1,122 @@
 {
-  "start": "2023-06-24T07:23:47.481Z",
-  "end": "2023-06-24T07:23:47.483Z",
+  "start": "2023-08-27T07:54:40.288Z",
+  "end": "2023-08-27T07:55:31.476Z",
   "capabilities": {
-    "0": {
-      "maxInstances": 1,
-      "browserName": "chrome",
-      "acceptInsecureCerts": true
-    }
+    "acceptInsecureCerts": true,
+    "browserName": "chrome",
+    "browserVersion": "116.0.5845.110",
+    "chrome": {
+      "chromedriverVersion": "116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382})",
+      "userDataDir": "/var/folders/cc/5yx7pb2x3hd7_3gdjhv0w8c00000gp/T/.org.chromium.Chromium.83akJB"
+    },
+    "fedcm:accounts": true,
+    "goog:chromeOptions": {
+      "debuggerAddress": "localhost:60553"
+    },
+    "networkConnectionEnabled": false,
+    "pageLoadStrategy": "normal",
+    "platformName": "mac os x",
+    "proxy": {},
+    "setWindowRect": true,
+    "strictFileInteractability": false,
+    "timeouts": {
+      "implicit": 0,
+      "pageLoad": 300000,
+      "script": 30000
+    },
+    "unhandledPromptBehavior": "dismiss and notify",
+    "webauthn:extension:credBlob": true,
+    "webauthn:extension:largeBlob": true,
+    "webauthn:extension:minPinLength": true,
+    "webauthn:extension:prf": true,
+    "webauthn:virtualAuthenticators": true,
+    "sessionId": "cc3a84186fdae4e6fc5c1df94c6fdc7b"
   },
+  "host": "localhost",
+  "port": 9515,
   "baseUrl": "http://localhost",
   "framework": "mocha",
-  "mochaOpts": {
-    "timeout": 60000,
-    "ui": "bdd"
-  },
-  "duration": 2,
-  "suites": [],
+  "duration": 51188,
+  "suites": [
+    {
+      "title": "Beautyhaul Indonesia",
+      "duration": 50776,
+      "start": "2023-08-27T07:54:40.294Z",
+      "end": "2023-08-27T07:55:31.070Z",
+      "tests": [
+        {
+          "title": "Order",
+          "start": "2023-08-27T07:54:40.294Z",
+          "end": "2023-08-27T07:55:31.064Z",
+          "duration": 50770,
+          "state": "passed",
+          "screenshots": [
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122888048.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122889306.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122892116.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122892861.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122894103.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122894498.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122895170.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122895512.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122896008.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122896362.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122898825.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122899244.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122899967.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122900392.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122901565.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122902037.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122903539.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122903957.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122904552.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122905000.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122905964.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122906333.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122908785.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122909147.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122909575.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122909929.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122910599.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122910962.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122911807.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122912222.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122917912.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122918233.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122918736.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122919043.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122919503.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122919808.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122920811.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122921155.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122921562.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122921888.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122922540.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122922919.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122923541.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122923887.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122924329.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122924705.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122925212.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122925528.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122926071.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122926415.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122926875.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122927202.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122927711.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122928031.jpeg",
+            "/Users/beautyhaul/Documents/beautyhaulindo/result/file-1693122931432.jpeg"
+          ]
+        }
+      ],
+      "hooks": []
+    }
+  ],
   "specs": [
     "file:///Users/beautyhaul/Documents/beautyhaulindo/test/specs/003_order.js"
   ],
   "state": {
-    "passed": 0,
+    "passed": 1,
     "failed": 0,
     "skipped": 0
   }

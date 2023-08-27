@@ -17,6 +17,12 @@ class MarkaskpaidPage extends Page {
     get orderIdSelector() {
         return $('//*[@id="data-order"]/tbody/tr/td[2]/a')
     }
+    get pendingCheckBox() {
+        return $('//*[@id="page-content"]/div[2]/form/div[3]/div[2]/input')
+    }
+    get filterOrder() {
+        return $('//*[@id="page-content"]/div[2]/form/div[6]/button')
+    }
     get markAsPaidSelector() {
         return $('//*[@id="page-content"]/div[2]/div[2]/form/div[2]/a[1]/button')
     }
@@ -27,7 +33,7 @@ class MarkaskpaidPage extends Page {
         return $('//*[@id="frmPay"]/div[3]/div[1]/div[4]/input')
     }
     get paymentDate() {
-        return $('//*[@id="dp1687673198157"]')
+        return $('//*[@id="frmPay"]/div[3]/div[1]/div[5]/input')
     }
     get calendar() {
         return $('//*[@id="ui-datepicker-div"]/table/tbody/tr[4]/td[7]/a')
@@ -51,6 +57,12 @@ class MarkaskpaidPage extends Page {
     async signInButton() {
         await this.signInButtonSelector.click()
     }
+    async clickPending() {
+        await this.pendingCheckBox.click()
+    }
+    async clickFilter() {
+        await this.filterOrder.click()
+    }
     async clickSearch() {
         await this.searchSelector.click()
     }
@@ -63,14 +75,14 @@ class MarkaskpaidPage extends Page {
     async clickPaymentName() {
         await this.paymentNameSelector.click()
     }
-    async inputPaymentName() {
+    async inputPaymentName(shabrina) {
         await this.paymentNameSelector.setValue(shabrina)
     }
     async clickPaymentAmount() {
         await this.paymentAmountSelector.click()
     }
-    async inputPaymentAmount() {
-        await this.paymentAmountSelector.setValue(200000)
+    async inputPaymentAmount(nominal) {
+        await this.paymentAmountSelector.setValue(nominal)
     }
     async clickPaymentDate() {
         await this.paymentDate.click()
