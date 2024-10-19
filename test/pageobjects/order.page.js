@@ -16,38 +16,38 @@ class OrderPage extends Page {
         return $('/html/body/div[2]/div/div/div[2]/div[2]/div[4]/a/div[1]/picture/img')
     }
     get addToCartSelector() {
-        return $('/html/body/div[2]/div/div[2]/div[3]/div[2]/form/div[9]/div[2]/button')
+        return $('//*[@id="btn-add-to-cart"]')
     }
     get cartIconSelector() {
-        return $('/html/body/header/div[2]/div[1]/div[1]/div[3]/div[2]/ul/li[4]/a/span')
+        return $('/html/body/header/div[2]/div[1]/div[1]/div[3]/div[2]/ul/li[4]/a/span/div')
     }
     get checkoutSelector() {
-        return $('/html/body/div[2]/div/form/div[2]/div[2]/div/div[4]/div[1]/button')
+        return $('//*[@id="btn-checkout"]')
     }
     get scrollIntoViewSelector() {
         //view ke delivery
-        return $('//*[@id="form-delivery"]/div[2]/div[1]')
+        return $('//*[@id="form-delivery"]/div[2]/div[2]/div[1]/div/div/div[1]')
     }
     get deleverySelector() {
         return $('//*[@id="form-delivery"]/div[2]/div[2]/div[1]/div/div/div[1]')
     }
     get deleveryCourierSelector() {
         //pilih kurir JNE
-        return $('//*[@id="form-delivery"]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]')
+        return $('//*[@id="form-delivery"]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div')
     }
     get paymentSelector() {
         //pilih VA BCA
         return $('//*[@id="form-shipping"]/div[3]/div/div[3]/div[2]/div[2]/div')
     }
     get nextButtonSelector() {
-        return $('//*[@id="form-shipping"]/div[5]/div[1]/button')
+        return $('//*[@id="btn-submit-cart"]')
     }
     get completeOrderButtonSelector() {
-        return $('/html/body/div[2]/div/form/div[2]/div[2]/div[2]/div[2]/div[1]/button')
+        return $('//*[@id="btn-complete-order"]')
     }
     get orderIdSelector() {
         //Untuk expect
-        return $('/html/body/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div[1]/div[1]')
+        return $('/html/body/div[1]/div/div/div[2]/div[1]/div/div[2]/div/div[1]/div[1]')
     }
     get uniqueOrderId() {
         return $('/html/body/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div[1]/div[2]')

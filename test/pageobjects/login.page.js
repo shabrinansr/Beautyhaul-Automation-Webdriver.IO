@@ -6,19 +6,22 @@ class LoginPage extends Page {
         return $('/html/body/header/div[2]/div[1]/div[1]/div[3]/div[1]/a[1]')
     }
     get inputEmailSelector() {
-        return $('/html/body/div[2]/div/div/div[1]/form/div[2]/input')
+        return $('/html/body/div[1]/div/div/div[1]/form/div[2]/div[1]/input')
     }
     get inputPassSelector() {
-        return $('/html/body/div[2]/div/div/div[1]/form/div[3]/input')
+        return $('/html/body/div[1]/div/div/div[1]/form/div[2]/div[2]/input')
     }
     get signInButtonSelector() {
-        return $('/html/body/div[2]/div/div/div[1]/form/div[5]/button')
+        return $('/html/body/div[1]/div/div/div[1]/form/div[4]/button')
     }
     get signInSuccessSelector() {
         return $('/html/body/header/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]')
     }
-    get dontallowSelector() {
-        return $('//*[@id="moe-dontallow_button"]')
+    get closeBanner() {
+        return $('//*[@id="popupwrapper"]/div/div')
+    }
+    get closePhoneVerivication() {
+        return $('//*[@id="close-overlay"]')
     }
 
     // Action
@@ -40,8 +43,11 @@ class LoginPage extends Page {
     async signInButton() {
         await this.signInButtonSelector.click()
     }
-    async clickDontAllow(){
-        await this.dontallowSelector.click()
+    async clickCloseBanner(){
+        await this.closeBanner.click()
+    }
+    async clickCloseVerivication(){
+        await this.closePhoneVerivication.click()
     }
 }
 
