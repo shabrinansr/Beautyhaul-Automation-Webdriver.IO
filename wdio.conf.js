@@ -25,7 +25,7 @@ export const config = {
     // will be called from there.
     //
     specs: [
-        'test/specs/001_logout.js'
+        'test/specs/003_logout.js'
         // ToDo: define location for spec files here
     ],
     // Patterns to exclude.
