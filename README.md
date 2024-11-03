@@ -1,6 +1,3 @@
-Beautyhaul Automation with WebdriverIO
-Welcome to the Beautyhaul Automation repository! This project contains a sample automation script created with WebdriverIO to test the Beautyhaul website.
-
 🚀 Project Overview
 This repository includes:
 - Sample Automation Script: Developed with WebdriverIO to demonstrate automated testing for the Beautyhaul website.
