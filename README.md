@@ -8,7 +8,6 @@ This repository includes:
 
 🛠️ Prerequisites
 Before running this script, make sure you have the following installed:
-- Java - Required for WebdriverIO's underlying components.
 - Visual Studio Code (or another preferred code editor) - For managing and running the script.
 - Node.js and WebdriverIO - WebdriverIO needs to be installed for script execution.
 
