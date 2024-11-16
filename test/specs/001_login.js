@@ -9,7 +9,7 @@ describe('Beautyhaul Indonesia', () => {
         await browser.pause(2000)
         await LoginPage.clickSignIn()
         await LoginPage.inputEmail('shabrina.shabrina@beautyhaul.com')
-        await LoginPage.inputPass('Sh4brin4#121199')
+        await LoginPage.inputPass('Beautyhaul12')
         await LoginPage.signInButton()
         await browser.pause(3000)
         await LoginPage.clickCloseVerivication()
